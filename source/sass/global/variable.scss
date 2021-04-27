@@ -1,0 +1,51 @@
+$font-deafult: "Montserrat", "Arial", sans-serif;
+
+// Colors
+
+$black: #000000;
+$white: #ffffff;
+$black-text: #141517;
+$red-hover: #fe7865;
+$red: #f17d4b;
+$white-toogle: #dadada;
+$grey: #d7d9df;
+$light-grey: #fbf8f8;
+$dark-grey: #48494d;
+$darker-grey: #2c2e3f;
+$grey-opacity-70: rgba(44, 46, 63, 0.7);
+$grey-opacity-30: rgba(44, 46, 63, 0.3);
+$grey-opacity-10: rgba(41, 54, 66, 0.1);
+$grey-opacity-20: rgba(20, 21, 23, 0.2);
+$black-opacity-30: rgba(20, 21, 23, 0.3);
+$black-opacity-50: rgba(20, 21, 23, 0.5);
+$black-opacity-70: rgba(20, 21, 23, 0.7);
+
+// Viewports
+
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1170px;
+$mobile-width-only: 767px;
+$tablet-width-only: 1023px;
+
+//image variable
+
+$density-pixel: 2dppx;
+
+//Mixin
+
+@mixin wrapper {
+  margin: 0 auto;
+
+  @media (min-width: $mobile-width-only) {
+    width: $mobile-width;
+  }
+
+  @media (min-width: $tablet-width-only) {
+    width: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
+}

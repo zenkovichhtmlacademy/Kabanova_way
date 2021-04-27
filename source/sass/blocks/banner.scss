@@ -1,0 +1,140 @@
+.banner {
+  min-height: 860px;
+  font-family: $font-deafult;
+  color: $white;
+  background-color: $darker-grey;
+  background-image: url("../img/trip-photo.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (min-resolution: $density-pixel) {
+    background-image: url("../img/trip-photo@2x.png");
+    background-size: 1920px 860px;
+  }
+}
+
+.banner__wrapper {
+  @include wrapper;
+  padding: 185px 80px 30px 628px;
+
+  @media (min-width: 1170px) {
+    padding-left: 700px;
+  }
+}
+
+.banner__title {
+  font-size: 55px;
+  line-height: 80px;
+  font-weight: 600;
+  letter-spacing: -1.10667px;
+}
+
+.banner__text {
+  margin-top: 28px;
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 400;
+  letter-spacing: -0.466667px;
+}
+
+.banner__button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 36px;
+  width: 340px;
+  padding: 27px 39px 30px 40px;
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.banner__button-icon {
+  flex-shrink: 0;
+  align-self: center;
+  fill: none;
+  stroke: $white;
+}
+
+@media (max-width: $tablet-width-only) {
+  .banner {
+    min-height: 344px;
+    padding: 60px 185px 30px 185px;
+    background-image: url("../img/trip-photo-tablet.png");
+
+    @media (min-resolution: $density-pixel) {
+      background-image: url("../img/trip-photo-tablet@2x.png");
+    }
+  }
+
+  .banner__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+
+  .banner__title {
+    margin-bottom: 15px;
+    font-size: 30px;
+    line-height: 45px;
+    text-align: center;
+    letter-spacing: 0;
+  }
+
+  .banner__text {
+    margin-top: 2px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: $white;
+  }
+
+  .banner__button {
+    width: 250px;
+    margin: 0 auto;
+    padding: 19px 40px 17px 40px;
+    letter-spacing: 0;
+  }
+
+  .banner__button-icon {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .banner {
+    padding: 82px 16px 30px 16px;
+    background-color: transparent;
+    background-image: url("../img/trip-photo-mobile.png");
+    background-size: 100% 235px;
+    background-position: center 0;
+
+    @media (min-resolution: $density-pixel) {
+      background-image: url("../img/trip-photo-mobile@2x.png");
+    }
+  }
+
+  .banner__wrapper {
+    width: auto;
+  }
+
+  .banner__title {
+    min-height: 72px;
+    margin-bottom: 101px;
+    margin-left: 6px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .banner__text {
+    margin-bottom: 20px;
+    color: $darker-grey;
+  }
+
+  .banner__button {
+    width: 288px;
+  }
+}
